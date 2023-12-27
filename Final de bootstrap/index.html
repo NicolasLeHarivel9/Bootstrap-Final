@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+
+<body data-bs-target="#barra" data-bs-spy="scroll">
+    <!-- Navbar -->
+    <nav id="barra" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cherry</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#header">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Header -->
+        <header id="header" class="py-5 text-center">
+            <div class="container row align-items-center">
+                <h1 class="text-black">Bienvenido a Cherry</h1>
+                <p id="sub" class="text-black lead">Viaja a Japon con nosotros</p>
+            </div>
+        </header>
+
+    <!-- Sobre -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">Sobre Nosotros</h2>
+                    <p>Somos una empresa Argentina dedicada al turismo en Japón, tenemos los mejores paquetes turísticos que se pueden acomodar a tu precio y gusto para ir a cualquier parte de Japón que desees, tenemos años de experiencia y empleados nativos y bilingües para ayudarlos en todo lo que necesiten durante su viaje. Por favor contáctanos vía mensaje al final de la página o a través de nuestras redes sociales para saber más.</p>
+                </div>
+    
+                <div class="col-md-6">
+                    <p>Puedes acercarte a nuestras oficinas en:</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7836976774283!2d-58.416960022203305!3d-34.55903162643766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a7f531c7b5%3A0xfdd992892f9ccadb!2sAeroparque%20Internacional%20Jorge%20Newbery!5e0!3m2!1ses-419!2sar!4v1703703737863!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+        <section id="services" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">¿Por qué elegir nuestros servicios?</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Vuelos</h3>
+                                <div id="carouselVuelos" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="imgCarrusel" src="/Imgs/Avion1.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Avion2.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Avion3.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Avion4.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVuelos" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVuelos" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p class="card-text">Los mejores vuelos, mas baratos y mas rápido para llegar a tu destino. Afiliados con Aerolíneas Argentina.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Hoteles</h3>
+                                <div id="carouselHotel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel2.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel3.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="d-flex justify-content-center">
+                                                <img class="imgCarrusel" src="/Imgs/Hotel4.jpg" class="d-block w-100 img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel5.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel6.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel7.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel8.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel9.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel10.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel11.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel12.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel13.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel14.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Hotel15.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p class="card-text">Variedades de hoteles por todo Japón para que tengas la mejor experiencia con un gran rango de precios y con gran variedad de hoteles para que tengas la mejor experiencia a donde vayas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Turismo</h3>
+                                <div id="carouselTurismo" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon2.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon3.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon4.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon5.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon6.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon7.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon8.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="imgCarrusel" src="/Imgs/Turismo_Japon10.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTurismo" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTurismo" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p class="card-text">Visita desde Okinawa hasta Sapporo, Tokio, Kioto, Fukuoka y todas las hermosas ciudades que tiene Japón, también incluimos viajes a las zonas mas rurales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Extra -->  
+    <section id="descripcion" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="display-4 mb-4">Descubre Japón</h2>
+                    <p class="lead">Japón, conocido por su combinación única de historia, cultura moderna, tecnología innovadora y tradiciones ancestrales, es un destino fascinante para los viajeros de todo el mundo.</p>
+                    <p>Desde las bulliciosas calles de Tokio hasta los antiguos templos de Kioto, Japón ofrece una experiencia que mezcla lo tradicional con lo vanguardista, donde la armonía y el respeto por la cultura se entrelazan con el progreso tecnológico.</p>
+                    <p>Además de su comida deliciosa y variada, la belleza natural de Japón, desde los cerezos en flor hasta los majestuosos paisajes montañosos, ofrece una gama diversa de experiencias para todo tipo de viajeros.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/Imgs/Japon.jpg" class="img-fluid rounded" alt="Mapa de Japón">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <form id="form1">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btnMensaje">Enviar Mensaje</button>
+                            <div id="alertSI" class="alert alert-success alert-dismissible fade show" role="alert">El mensaje ha sido enviado con éxito.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer bg-dark text-white py-5" id="pieDePag">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Información de Contacto</h4>
+                    <p>Dirección: 123 Calle Principal, Ciudad</p>
+                    <p>Teléfono: +123456789</p>
+                    <p>Email: info@empresa.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#header" class="text-white">Inicio</a></li>
+                        <li><a href="#about" class="text-white">Info</a></li>
+                        <li><a href="#services" class="text-white">Servicios</a></li>
+                        <li><a href="#contact" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Síguenos</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Empresa de Turismo. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $("#alertSI").hide();
+        $("#form1").submit(function(e) {
+            e.preventDefault();
+            let name = $.trim($("#name").val());
+            let email = $.trim($("#email").val());
+            let message = $.trim($("#message").val());
+            if (name.length > 0 && email.length > 0 && message.length > 0) {
+                $("#alertSI").fadeTo(2000, 500).slideUp(500);
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+<!-- Felices fiestas!!! -->

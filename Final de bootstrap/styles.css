@@ -1,0 +1,41 @@
+#barra, #about{
+    background-color: pink;
+}
+
+#contact{
+    background-color: rgb(250, 245, 246);
+}
+
+#pieDePag{
+    background-color: black;
+}
+
+#header{
+    background: url('/Imgs/Charry-blossoms.jpg') fixed;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 350px;
+}
+
+h1{
+    text-shadow: 2px 2px gray;
+}
+
+#sub{
+    text-shadow: 1px 1px gray;
+}
+
+#services, #descripcion{
+    background-color:rgb(255, 211, 218) ;
+}
+
+.card{
+    background-color: rgb(255, 235, 239);
+    height: 450px;
+}
+
+.imgCarrusel{
+    max-width: fit-content;
+    max-height: 250px;
+}
